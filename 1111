@@ -1,0 +1,20 @@
+#include "pch.h"
+#include <iostream>
+using namespace std;
+
+
+	int Fs(int n) {
+		if (n == 0)
+			return 1;
+		else
+			return n * Fs(n - 1);
+
+   }
+int main() {
+	int n, Total;
+	cout << "輸入字 n:" << endl;
+	cin >> n;
+	Total = Fs(n);
+	printf("n!= %d", Total);
+	return 0;
+}
